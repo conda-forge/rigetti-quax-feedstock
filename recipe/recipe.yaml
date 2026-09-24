@@ -2,7 +2,7 @@
 schema_version: 1
 
 context:
-  version: "0.7.2"
+  version: "0.7.6"
   python_min: "3.11"
 
 package:
@@ -11,7 +11,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/r/rigetti-quax/rigetti_quax-${{ version }}.tar.gz
-  sha256: c37a05128b12319b6b47fa10d45277ea89eec7a17ed41681d0c641d5113cdb0d
+  sha256: 6bad9ce0bb4b3e520f60b233f40d7d0b1449165712ef69c4e627afc0a1b98929
 
 build:
   number: 0
@@ -24,8 +24,9 @@ requirements:
     - pip
     - poetry-core
   run:
-    - python >=${{ python_min }}
+    - deprecated
     - jax >=0.10.2
+    - python >=${{ python_min }}
   run_constraints:
     - quax <0a0
 
