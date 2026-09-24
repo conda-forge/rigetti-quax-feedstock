@@ -2,7 +2,7 @@
 schema_version: 1
 
 context:
-  version: "0.7.2"
+  version: "0.7.7"
   python_min: "3.11"
 
 package:
@@ -11,7 +11,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/r/rigetti-quax/rigetti_quax-${{ version }}.tar.gz
-  sha256: c37a05128b12319b6b47fa10d45277ea89eec7a17ed41681d0c641d5113cdb0d
+  sha256: 2b5e6237352b11da6445f3ffc4a6dfdd710e793361c1d2148f6c842d1d625b89
 
 build:
   number: 0
