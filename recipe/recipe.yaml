@@ -24,8 +24,9 @@ requirements:
     - pip
     - poetry-core
   run:
-    - python >=${{ python_min }}
+    - deprecated
     - jax >=0.10.2
+    - python >=${{ python_min }}
   run_constraints:
     - quax <0a0
 
